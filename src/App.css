@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: antiquewhite;
+	padding: 15px 0;
+  position: sticky;
+  top: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+	padding: 0 15px;
+	text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+	text-align: center;
+	background-color: gray;
+	width: 100%;
+    margin: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#email{
+	border-color: black;
+	width: 20%;
+	height: 1.5rem;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#submit{
+	font-size: 15px;
+	border: none;
+	padding: 5px 20px;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#submit:hover{
+	color: blue;
+	cursor: pointer;
+}
+#hero{
+	width: 100%;
+	height: 70vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px 0;
+}
+#icon{
+	margin-right: 10px;
+}
+#video{
+	width: 400px;
+	height: 250px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.item{
+    background-color: #ddd;
+    height: 300px;
+    text-align: center;
+    margin: 10px 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media(max-width: 600px){
+	
+	#nav-bar{
+		border: 1px solid;
+		margin: 0 0 0 -30px;
+		
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+	#header-img{
+		border: 1px solid;
+		width: 40px;
+		margin: -10px 0;
+	}
+  #email{
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+	#video{
+		width: 30%;
+		height: 150px;
+	}
+	.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+.item{
+	margin: 5px;
+	height: 200px;
+}
+}
+a{  text-decoration: none;
+}
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  margin-right: 15px;
 }
